@@ -1,3 +1,4 @@
-data/
+data/*/*.json
+data/*/*/*
 .DS_Store
 .tito-*.json
