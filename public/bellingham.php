@@ -1,3 +1,13 @@
+<?php
+$event = 'bellingham';
+$title = 'IndieWebCamp Bellingham';
+$date = 'May 4-5, 2017';
+$year = 2017;
+$city = 'Bellingham, Washington';
+$url = 'https://2017.indieweb.org/bellingham';
+$summary = 'IndieWebCamp Bellingham 2017 is one of several IndieWebCamp events in 2017. Join us in Bellingham, WA for two days of a BarCamp-style gathering of web creators building and sharing open web technologies to empower users to own their own identities & content, and advance the state of the #indieweb!';
+include(dirname(__FILE__).'/../lib/rsvps.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +15,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>IndieWebCamp NYC2 2016 - New York</title>
+  <title><?= $title ?> <?= $year ?> - <?= $city ?></title>
 
   <link rel="webmention" href="/webmention.php">
 
@@ -18,11 +28,11 @@
   <script src="/assets/leaflet/leaflet.js"></script>
   <script src='https://js.tito.io/v1' async></script>
 
-  <meta property="og:url" content="http://2016.indieweb.org/nyc2">
+  <meta property="og:url" content="<?= $url ?>">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="IndieWebCamp NYC2 - August 27-28, 2016 - New York">
-  <meta property="og:description" content="IndieWebCamp NYC2 2016 is a two-day maker event for creating and/or improving your personal website. All levels welcome! One of several 2016 IndieWebCamps and the fourth IndieWebCamp in NYC!">
-  <meta property="og:image" content="http://2016.indieweb.org/assets/2014-indieweb-movement.jpg">
+  <meta property="og:title" content="<?= $title ?> - <?= $date ?> - <?= $city ?>">
+  <meta property="og:description" content="<?= htmlspecialchars($summary) ?>">
+  <meta property="og:image" content="https://2017.indieweb.org/assets/2014-indieweb-movement.jpg">
 
   <script>
   $(document)
@@ -55,7 +65,7 @@
 <!-- Following Menu -->
 <div class="ui large top fixed hidden menu">
   <div class="ui container">
-    <?php include('../copy-nyc2/nav.php'); ?>
+    <?php include('../templates/'.$event.'/nav.php'); ?>
 <!--     
     <div class="right menu">
       <div class="item">
@@ -68,7 +78,7 @@
 
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
-  <?php include('../copy-nyc2/nav.php'); ?>
+  <?php include('../templates/'.$event.'/nav.php'); ?>
 </div>
 
 
@@ -81,21 +91,21 @@
         <a class="toc item">
           <i class="sidebar icon"></i>
         </a>
-        <?php include('../copy-nyc2/nav.php'); ?>
+        <?php include('../templates/'.$event.'/nav.php'); ?>
       </div>
     </div>
 
     <div class="ui text container event-header">
 
       <h1 class="ui inverted header p-name">
-        IndieWebCamp NYC2 2016
+        <?= $title ?>
       </h1>
 
-      <h2>August 27-28, 2016</h2>
-      <h2>New York</h2>
+      <h2><?= $date ?></h2>
+      <h2><?= $city ?></h2>
 
 
-      <p class="summary">IndieWebCamp NYC2 2016 is a two-day maker event for creating and/or improving your personal website. All levels welcome! One of several 2016 IndieWebCamps and the fourth IndieWebCamp in NYC!</p>
+      <p class="summary p-summary"><?= htmlspecialchars($summary) ?></p>
 
     </div>
 
@@ -106,7 +116,7 @@
     <div class="ui text container">
       <h3 class="ui header">Register</h3>
 
-      <tito-widget event="indiewebcamp/nyc2-2016"><a href="http://tickets.indieweb.org/indiewebcamp/nyc2-2016">Get Tickets</a></tito-widget>
+      <tito-widget event="indiewebcamp/bellingham-2017"><a href="https://ti.to/indiewebcamp/bellingham-2017">Get Tickets</a></tito-widget>
 
     </div>
   </div>
@@ -116,14 +126,15 @@
     <div class="ui text container">
       <h3 class="ui header">Indie RSVPs</h3>
 
-      <p>See <a href="https://indiewebcamp.com/RSVP">indiewebcamp.com/RSVP</a> for instructions on how to create an RSVP post. Once you've created the RSVP post which links to this page, send a Webmention and you'll appear below!</p>
+      <p>See <a href="https://indieweb.org/RSVP">indieweb.org/RSVP</a> for instructions on how to create an RSVP post. Once you've created the RSVP post which links to this page, send a Webmention and you'll appear below!</p>
 
-      <?php include('../lib/show-rsvps-nyc2.php'); ?>
+      <?php include('../templates/show-rsvps.php'); ?>
 
       <h3 class="ui header">Tickets</h3>
 
       <p>The people below registered for a ticket through the registration system.</p>
-      <?php include('../lib/show-tito-tickets-nyc2.php'); ?>
+      <?php include('../templates/show-tito-tickets.php'); ?>
+
     </div>
   </div>
 
@@ -132,18 +143,18 @@
   <div class="ui vertical stripe segment" id="schedule">
     <div class="ui text container">
       <h3 class="ui header">Schedule</h3>
-      <?php include('../copy-nyc2/schedule.php'); ?>
+      <?php include('../templates/'.$event.'/schedule.php'); ?>
     </div>
   </div>
 
 
   <div class="ui vertical stripe segment orange-bkg" id="social-media-section">
     <div class="ui text container">
-      <div style="font-size: 2em; text-align: center;" class="">
+      <div style="font-size: 2em; text-align: center;" class="carrot-white">
         #indiewebcamp
       </div>
       <div style="font-size: 4em; text-align: center;" class="social-media-icons">
-        <a href="https://indiewebcamp.com"><i class="ui attach icon"></i></a>
+        <a href="https://indieweb.org"><i class="ui attach icon"></i></a>
         <a href="https://twitter.com/indiewebcamp"><i class="ui twitter icon"></i></a>
         <a href="https://www.facebook.com/indiewebcamp/"><i class="ui facebook icon"></i></a>
       </div>
@@ -156,11 +167,20 @@
   </div>
 
 
+  <!--
+  <div class="ui vertical stripe segment" id="travel-assistance">
+    <div class="ui text container">
+      <h3 class="ui header">Travel Assistance</h3>
+      <?php include('../templates/'.$event.'/assistance.php'); ?>
+    </div>
+  </div>
+  -->
+
 
   <div class="ui vertical stripe segment" id="sponsors">
     <div class="ui text container">
       <h3 class="ui header">Sponsors</h3>
-      <?php include('../copy-nyc2/sponsors.php'); ?>
+      <?php include('../templates/'.$event.'/sponsors.php'); ?>
     </div>
   </div>
 
@@ -168,12 +188,11 @@
 
   <div class="ui inverted vertical footer segment gold-bkg">
     <div class="ui container">
-      <p>IndieWebCamp NYC2 2016 &bull; August 27-28, 2016 &bull; New York</p>
+      <p><?= $title ?> &bull; <?= $date ?> &bull; <?= $city ?></p>
       <ul>
-        <li><a href="https://indiewebcamp.com/">IndieWebCamp Home Page</a></li>
-        <li><a href="https://indiewebcamp.com/2016/NYC2">Event Details</a></li>
-        <li><a href="https://indiewebcamp.com/code-of-conduct">Code of Conduct</a></li>
-        <li><a href="https://indiewebcamp.com/images/2/2d/indiewebcamp-sponsorship-prospectus.pdf">Sponsorship Prospectus</a> (PDF)</li>
+        <li><a href="https://indieweb.org/">IndieWebCamp Home Page</a></li>
+        <li><a href="https://indieweb.org/code-of-conduct">Code of Conduct</a></li>
+        <li><a href="https://indieweb.org/images/2/2d/indiewebcamp-sponsorship-prospectus.pdf">Sponsorship Prospectus</a> (PDF)</li>
       </ul>
     </div>
   </div>
@@ -182,7 +201,7 @@
 <script>
 var map = L.map('map', {
   scrollWheelZoom: false,
-  center: [40.744675, -73.984865],
+  center: [48.752780, -122.489751],
   zoom: 13
 });
 
@@ -192,12 +211,15 @@ var layer = L.tileLayer(tileProtocol+'//{s}.basemaps.cartocdn.com/light_all/{z}/
 });
 map.addLayer(layer);
 
-var marker = L.marker([40.744675, -73.984865]).addTo(map);
-marker.bindPopup("<b>Dalberg Global Development Advisors</b><br>99 Madison Ave, Floor 17<br>New York, NY").openPopup();
+// var marker = L.marker([45.518616, -122.682158]).addTo(map);
+// marker.bindPopup("<b>Vadio</b><br>919 SW Taylor St.<br>Portland, Oregon").openPopup();
 
-$(function(){
-  $(".popup").popup();
-});
+// var marker2 = L.marker([45.526159, -122.675330]).addTo(map);
+// marker2.bindPopup("<b>Pints</b><br>412 NW 5th Ave.<br>Portland, Oregon");
+
+// $(function(){
+//   $(".popup").popup();
+// });
 
 </script>
 <script>

@@ -1,5 +1,12 @@
 <?php
-$config = json_decode(trim(file_get_contents(dirname(__FILE__).'/.tito-nyc2.json')));
+$event = $argv[1];
+
+$config_file = dirname(__FILE__).'/.tito-'.$event.'.json';
+if(!file_exists($config_file)) {
+  echo "Tito config file was not found\n";
+  die();
+}
+$config = json_decode(trim(file_get_contents($config_file)));
 
 function get_tito($url) {
   global $config;
@@ -68,5 +75,5 @@ foreach($registrations->data as $reg) {
 
 }
 
-file_put_contents(dirname(__FILE__).'/data/rsvpsnyc2/tickets.json', json_encode($ticketData));
+file_put_contents(dirname(__FILE__).'/data/'.$event.'/tickets.json', json_encode($ticketData));
 

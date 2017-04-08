@@ -23,10 +23,12 @@ switch($ext) {
     header('Content-type: image/svg+xml'); break;
 }
 
-if(array_key_exists('event', $_GET) && in_array($_GET['event'], ['nyc2']))
-  $rsvps = 'rsvps'.$_GET['event'];
-else
-  $rsvps = 'rsvps';
+$events = ['summit','bellingham'];
 
-readfile(dirname(__FILE__).'/../data/'.$rsvps.'/'.$folder.'/photo.'.$ext);
+if(array_key_exists('event', $_GET) && in_array($_GET['event'], $events))
+  $event = $_GET['event'];
+else
+  $event = 'summit';
+
+readfile(dirname(__FILE__).'/../data/'.$event.'/'.$folder.'/photo.'.$ext);
 

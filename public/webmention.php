@@ -1,8 +1,6 @@
 <?php
 require_once('../lib/HTTP.php');
-
-$xrayBaseURL = 'https://xray.p3k.io';
-$targetBaseURL = 'http://2016.indieweb.org';
+require_once('../lib/config.php');
 
 $http = new HTTP();
 
@@ -24,7 +22,7 @@ if(!isset($_POST['source']) || !isset($_POST['target'])) {
 	<h2>Send a Webmention</h2>
 	<form action="/webmention.php" method="post">
 		Source: <input type="url" name="source" value="" style="width:400px;"><br><br>
-		Target: <input type="url" name="target" value="http://2016.indieweb.org/nyc2" style="width:400px;"><br><br>
+		Target: <input type="url" name="target" value="<?= $targetBaseURL ?>/" style="width:400px;"><br><br>
 		<input type="submit" value="Send Webmention">
 	</form>
 </div>
@@ -36,8 +34,19 @@ if(!isset($_POST['source']) || !isset($_POST['target'])) {
 $sourceURL = $_POST['source'];
 $targetURL = $_POST['target'];
 
-if($targetURL != $targetBaseURL.'/nyc2' && $targetURL != $targetBaseURL.'/la') {
-  error("Webmentions are only accepted for ".$targetBaseURL."/nyc2 and ".$targetBaseURL."/la");
+$targetURLParts = parse_url($targetURL);
+if(empty($targetURLParts['path']))
+  $targetURLParts['path'] = '/';
+
+$event = false;
+foreach($events as $e) {
+  if($e['url'] == $targetURLParts['path']) {
+    $event = $e['folder'];
+  }
+}
+
+if(!$event) {
+  error("Webmentions are only accepted for current events. The target in your request was not the URL of a current event.");
 }
 
 $response = $http->get($xrayBaseURL.'/parse?url='.urlencode($sourceURL).'&target='.urlencode($targetURL));
@@ -66,11 +75,7 @@ if(!array_key_exists('rsvp', $source)) {
 if(strtolower($source['rsvp']) == 'yes') {
 
   // Store the response data to disk so that it's rendered on the event page
-  if($targetURL == $targetBaseURL.'/nyc2') {
-    $folder = dirname(__FILE__).'/../data/rsvpsnyc2/'.md5($sourceURL);
-  } elseif($targetURL != $targetBaseURL.'/la') {
-    $folder = dirname(__FILE__).'/../data/la/'.md5($sourceURL);
-  }
+  $folder = dirname(__FILE__).'/../data/'.$event.'/'.md5($sourceURL);
   @mkdir($folder);
 
   if($source['author']['photo']) {

@@ -1,12 +1,12 @@
 <p>
-  <i class="calendar icon"></i> <time class="dt-start" datetime="2016-06-03">June 3</time>-<time class="dt-end" datetime="2016-06-05">5</time>, 2016<br>
-  <i class="marker icon"></i> <span class="h-card p-location"><span class="p-name">Vadio</span>, <span class="p-street-address">919 SW Taylor St, Ste 300</span>, <span class="p-locality">Portland</span>, <span class="p-region">Oregon</span></span>
+  <i class="calendar icon"></i> <time class="dt-start" datetime="2017-06-24">June 24</time>-<time class="dt-end" datetime="2017-06-25">25</time>, 2017<br>
+  <i class="marker icon"></i> <span class="h-card p-location"><span class="p-name">Venue TBD</span>, <span class="p-locality">Portland</span>, <span class="p-region">Oregon</span></span>
 </p>
 
 <div class="schedule-grid">
   <div class="day h-event">
     <div class="header gold-bkg">
-      <time class="dt-start" datetime="2016-06-03T19:00:00-0700">Friday, June 3</time><br>
+      <time class="dt-start" datetime="2016-06-03T19:00:00-0700">Friday, June 23</time><br>
       <span class="featured p-name">Pre-Summit Meetup</span>
     </div>
     <div class="summary p-description">
@@ -16,12 +16,12 @@
       <ul>
         <li><span class="time">19:00</span> <span class="featured">Pre-Summit Meetup!</span></li>
       </ul>
-      <span class="p-location h-card"><span class="p-name">Pine Street Market</span>,<br><span class="p-street-address">126 SW 2nd St.</span></span>
+      <span class="p-location h-card"><span class="p-name">TBD</span></span>
     </div>
   </div>
   <div class="day">
     <div class="header orange-bkg">
-      Saturday, June 4<br>
+      Saturday, June 24<br>
       <span class="featured">Keynotes &amp; Discussions</span>
     </div>
     <div class="summary">
@@ -44,7 +44,7 @@
   </div>
   <div class="day">
     <div class="header red-bkg">
-      Sunday, June 5<br>
+      Sunday, June 25<br>
       <span class="featured">Create, Hack, Demo!</span>
     </div>
     <div class="summary">
@@ -66,5 +66,5 @@
 </div>
 
 <br>
-<p>Schedule is subject to change. View the <a href="https://indiewebcamp.com/2016/Schedule">full schedule grid</a> on the IndieWebCamp wiki for the latest updates.</p>
+<p>Schedule is subject to change. View the <a href="https://indieweb.org/2017/Schedule">full schedule grid</a> on the IndieWeb wiki for the latest updates.</p>
 
