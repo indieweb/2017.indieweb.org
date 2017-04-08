@@ -205,8 +205,7 @@ var map = L.map('map', {
   zoom: 13
 });
 
-var tileProtocol = (window.location.protocol !== 'https:') ? 'http:' : 'https:';
-var layer = L.tileLayer(tileProtocol+'//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+var layer = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
 });
 map.addLayer(layer);
