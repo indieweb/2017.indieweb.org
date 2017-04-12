@@ -5,7 +5,7 @@ $date = 'May 4-5, 2017';
 $year = 2017;
 $city = 'Bellingham, Washington';
 $url = 'https://2017.indieweb.org/bellingham';
-$summary = 'IndieWebCamp Bellingham 2017 is one of several IndieWebCamp events in 2017. Join us in Bellingham, WA for two days of a BarCamp-style gathering of web creators building and sharing open web technologies to empower users to own their own identities & content, and advance the state of the #indieweb!';
+$summary = 'IndieWebCamp Bellingham 2017 is a gathering for independent web creators of all kinds, from graphic artists, to designers, UX engineers, coders, hackers, to share ideas, actively work on creating for their own personal websites, and build upon each others creations.';
 include(dirname(__FILE__).'/../lib/rsvps.php');
 ?>
 <!DOCTYPE html>
@@ -115,7 +115,11 @@ include(dirname(__FILE__).'/../lib/rsvps.php');
   <div class="ui vertical stripe segment" id="register">
     <div class="ui text container">
       <h3 class="ui header">Register</h3>
-
+      <p> <strong>Accessibility Notice:</strong> </p>
+      <ul>
+        <li> The meeting space for the first day (2017-05-04) is on the second floor, only accessible by stairs. Unfortunately it is not wheelchair accessible. </li>
+        <li> The meeting space for the second day (2017-05-05) is on the ground floor and <strong>is</strong> wheelchair accessible. </li>
+      </ul>
       <tito-widget event="indiewebcamp/bellingham-2017"><a href="https://ti.to/indiewebcamp/bellingham-2017">Get Tickets</a></tito-widget>
 
     </div>
