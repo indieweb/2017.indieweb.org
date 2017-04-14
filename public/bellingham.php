@@ -205,7 +205,7 @@ include(dirname(__FILE__).'/../lib/rsvps.php');
 <script>
 var map = L.map('map', {
   scrollWheelZoom: false,
-  center: [48.752780, -122.489751],
+  center: [48.7533589, -122.4894135],
   zoom: 13
 });
 
@@ -214,8 +214,8 @@ var layer = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/ligh
 });
 map.addLayer(layer);
 
-// var marker = L.marker([45.518616, -122.682158]).addTo(map);
-// marker.bindPopup("<b>Vadio</b><br>919 SW Taylor St.<br>Portland, Oregon").openPopup();
+var marker = L.marker([48.7533589, -122.4894135]).addTo(map);
+marker.bindPopup("<b>The Foundry</b><br>1000 F St.<br>Bellingham, Washington").openPopup();
 
 // var marker2 = L.marker([45.526159, -122.675330]).addTo(map);
 // marker2.bindPopup("<b>Pints</b><br>412 NW 5th Ave.<br>Portland, Oregon");
