@@ -5,7 +5,7 @@
   $websites = [];
   foreach($rsvps as $rsvp) {
     if($rsvp['data']['author']['url']) {
-      $websites[] = $rsvp['data']['author']['url'];
+      $websites[] = parse_url($rsvp['data']['author']['url'], PHP_URL_HOST);
     }
   }
 
@@ -14,9 +14,9 @@
   $tickets = json_decode(file_get_contents(dirname(__FILE__).'/../data/'.$event.'/tickets.json'));
   foreach($tickets as $ticket):
     if($ticket->show == 'yes'):
-      if(!in_array($ticket->website, $websites)):
+      if(!$ticket->website || !in_array(parse_url($ticket->website, PHP_URL_HOST), $websites)):
         if($ticket->website) {
-          $websites[] = $ticket->website;
+          $websites[] = parse_url($ticket->website, PHP_URL_HOST);
         }
       ?>
       <div class="rsvp">
@@ -36,7 +36,9 @@
       <?php
       endif;
     else:
-      $hidden++;
+      if(!in_array(parse_url($ticket->website, PHP_URL_HOST), $websites)) {
+        $hidden++;
+      }
     endif;
   endforeach;
   endif;
