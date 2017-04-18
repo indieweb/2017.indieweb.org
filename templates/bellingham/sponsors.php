@@ -3,9 +3,9 @@
 <ul>
   <li>
     <span class="logo">
-      <a href="http://example.com/"><img src="https://indiewebcamp.com/sponsor-logos/full/example.png"></a>
+      <a href="http://www.3dcorp.us/"><img src="https://indieweb.org/sponsor-logos/full/3D-corporation.png"></a>
     </span>
-    <span class="description"><a href="http://example/">Example</a> is a...</span>
+    <span class="description"><a href="http://www.3dcorp.us/">3D Corporation</a> makes IT simple, safe &amp; secure.</span>
   </li>
 </ul>
 
