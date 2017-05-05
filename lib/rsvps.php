@@ -1,6 +1,6 @@
 <?php
 function gravatar($email) {
-  return 'https://www.gravatar.com/avatar/'.md5($email).'.jpg?d='.urlencode('https://2017.indieweb.org/assets/no-photo.png');
+  return 'https://www.gravatar.com/avatar/'.md5(strtolower(trim($email))).'.jpg?d='.urlencode('https://2017.indieweb.org/assets/no-photo.png');
 }
 
 function loadRSVPs($event) {
