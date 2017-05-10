@@ -1,6 +1,6 @@
 <p>
   <i class="calendar icon"></i> <time class="dt-start" datetime="2017-06-24">June 24</time>-<time class="dt-end" datetime="2017-06-25">25</time>, 2017<br>
-  <i class="marker icon"></i> <span class="h-card p-location"><span class="p-name">Venue TBD</span>, <span class="p-locality">Portland</span>, <span class="p-region">Oregon</span></span>
+  <i class="marker icon"></i> <span class="h-card p-location"><span class="p-name">Mozilla Portland</span>, <span class="p-street-address">1120 NW Couch St #320</span>, <span class="p-locality">Portland</span>, <span class="p-region">Oregon</span></span>
 </p>
 
 <div class="schedule-grid">

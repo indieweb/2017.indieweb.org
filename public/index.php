@@ -201,7 +201,7 @@ include(dirname(__FILE__).'/../lib/rsvps.php');
 <script>
 var map = L.map('map', {
   scrollWheelZoom: false,
-  center: [45.518616, -122.682158],
+  center: [45.523459, -122.682703],
   zoom: 13
 });
 
@@ -211,15 +211,15 @@ var layer = L.tileLayer(tileProtocol+'//{s}.basemaps.cartocdn.com/light_all/{z}/
 });
 map.addLayer(layer);
 
-// var marker = L.marker([45.518616, -122.682158]).addTo(map);
-// marker.bindPopup("<b>Vadio</b><br>919 SW Taylor St.<br>Portland, Oregon").openPopup();
+var marker = L.marker([45.523459, -122.682703]).addTo(map);
+marker.bindPopup("<b>Mozilla Portland</b><br>1120 NW Couch St. #320<br>Portland, Oregon").openPopup();
 
 // var marker2 = L.marker([45.526159, -122.675330]).addTo(map);
 // marker2.bindPopup("<b>Pints</b><br>412 NW 5th Ave.<br>Portland, Oregon");
 
-// $(function(){
-//   $(".popup").popup();
-// });
+$(function(){
+  $(".popup").popup();
+});
 
 </script>
 <script>
