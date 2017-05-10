@@ -10,20 +10,18 @@
       <span class="featured">Keynotes &amp; Discussions</span>
     </div>
     <div class="summary">
-      Day 1 starts with keynotes, including major milestones, accomplishments in the past year, and demos, then BarCamp-style brainstorming and discussion sessions.
+      Day 1 starts with introductions, demos, and indieweb building blocks, then BarCamp-style brainstorming and discussion sessions.
     </div>
     <div class="details">
       <ul>
         <li><span class="time">09:00</span> Doors open, badges, coffee, and breakfast!</li>
-        <li><span class="time">09:30</span> <span class="featured">State of the IndieWeb</span></li>
-        <li><span class="time">10:00</span> <span class="featured">Cutting Edge IndieWeb</span></li>
-        <li><span class="time">10:30</span> Q&amp;A and break</li>
-        <li><span class="time">11:00</span> <span class="featured">How to: Building Blocks</span></li>
+        <li><span class="time">09:30</span> Introductions and demos</li>
+        <li><span class="time">10:30</span> Building blocks</li>
+        <li><span class="time">11:30</span> Session scheduling</li>
         <li><span class="time">12:00</span> Group photo &amp; Lunch</li>
-        <li><span class="time">13:00</span> Intros, demos, scheduling</li>
-        <li><span class="time">14:00</span> Sessions (45min)</li>
-        <li><span class="time">16:15</span> Last session</li>
-        <li><span class="time">17:00</span> Day 1 closing session, break, meetup later for dinner</li>
+        <li><span class="time">13:00</span> 45-minute Sessions </li>
+        <li><span class="time">16:45</span> Wrap up sessions, break, meetup later for dinner </li>
+        <li><span class="time">17:00</span> End of Day 1</li>
       </ul>
     </div>    
   </div>
@@ -38,13 +36,12 @@
     <div class="details">
       <ul>
         <li><span class="time">09:00</span> Doors open, badges, coffee, and breakfast!</li>
-        <li><span class="time">09:30</span> <span class="featured">IndieWeb Creating:</span> <br>Open source, design, research</li>
-        <li><span class="time">10:00</span> Day 2 session scheduling</li>
+        <li><span class="time">09:30</span> Day 2 kickoff, session scheduling </li>
         <li><span class="time">10:30</span> Creating sessions</li>
-        <li><span class="time">12:00</span> Catered lunch</li>
+        <li><span class="time">12:00</span> Group photo &amp; lunch</li>
         <li><span class="time">13:00</span> Creating sessions continue</li>
         <li><span class="time">16:00</span> Demos</li>
-        <li><span class="time">17:30</span> <span class="featured">Closing Keynote</span></li>
+        <li><span class="time">17:00</span> Camp closed! </li>
       </ul>
     </div>
   </div>

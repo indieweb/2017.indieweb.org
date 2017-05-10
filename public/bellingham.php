@@ -5,7 +5,7 @@ $date = 'May 4-5, 2017';
 $year = 2017;
 $city = 'Bellingham, Washington';
 $url = 'https://2017.indieweb.org/bellingham';
-$summary = 'IndieWebCamp Bellingham 2017 is one of several IndieWebCamp events in 2017. Join us in Bellingham, WA for two days of a BarCamp-style gathering of web creators building and sharing open web technologies to empower users to own their own identities & content, and advance the state of the #indieweb!';
+$summary = 'IndieWebCamp Bellingham 2017 is a gathering for independent web creators of all kinds, from graphic artists, to designers, UX engineers, coders, hackers, to share ideas, actively work on creating for their own personal websites, and build upon each others creations.';
 include(dirname(__FILE__).'/../lib/rsvps.php');
 ?>
 <!DOCTYPE html>
@@ -115,7 +115,11 @@ include(dirname(__FILE__).'/../lib/rsvps.php');
   <div class="ui vertical stripe segment" id="register">
     <div class="ui text container">
       <h3 class="ui header">Register</h3>
-
+      <p> <strong>Accessibility Notice:</strong> </p>
+      <ul>
+        <li> The meeting space for the first day (2017-05-04) is on the second floor, only accessible by stairs. Unfortunately it is not wheelchair accessible. </li>
+        <li> The meeting space for the second day (2017-05-05) is on the ground floor and <strong>is</strong> wheelchair accessible. </li>
+      </ul>
       <tito-widget event="indiewebcamp/bellingham-2017"><a href="https://ti.to/indiewebcamp/bellingham-2017">Get Tickets</a></tito-widget>
 
     </div>
@@ -201,18 +205,17 @@ include(dirname(__FILE__).'/../lib/rsvps.php');
 <script>
 var map = L.map('map', {
   scrollWheelZoom: false,
-  center: [48.752780, -122.489751],
+  center: [48.7533589, -122.4894135],
   zoom: 13
 });
 
-var tileProtocol = (window.location.protocol !== 'https:') ? 'http:' : 'https:';
-var layer = L.tileLayer(tileProtocol+'//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+var layer = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
 });
 map.addLayer(layer);
 
-// var marker = L.marker([45.518616, -122.682158]).addTo(map);
-// marker.bindPopup("<b>Vadio</b><br>919 SW Taylor St.<br>Portland, Oregon").openPopup();
+var marker = L.marker([48.7533589, -122.4894135]).addTo(map);
+marker.bindPopup("<b>The Foundry</b><br>1000 F St.<br>Bellingham, Washington").openPopup();
 
 // var marker2 = L.marker([45.526159, -122.675330]).addTo(map);
 // marker2.bindPopup("<b>Pints</b><br>412 NW 5th Ave.<br>Portland, Oregon");
