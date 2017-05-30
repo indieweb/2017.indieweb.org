@@ -244,12 +244,15 @@
 }
 
 .tito-ticket-donation-field {
-    border: 1px #ccc solid;
-    border-radius: 4px;
-    padding: 3px;
-    width: 70px;
+  border: 1px #ccc solid;
+  border-radius: 4px;
+  padding: 3px;
+  width: 70px;
 }
 
+.tito-discount-code {
+  display: none;
+}
 
 
 #map {
