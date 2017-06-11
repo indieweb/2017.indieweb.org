@@ -8,6 +8,8 @@ foreach($rsvps as $rsvp):
     $permalink = $rsvp['source'];
   else
     $permalink = $url;
+  if(parse_url($rsvp['source'], PHP_URL_HOST) == 'brid-gy.appspot.com')
+    continue;
   ?>
   <div class="rsvp">
     <div class="profile-photo">
