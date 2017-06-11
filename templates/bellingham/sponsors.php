@@ -3,7 +3,7 @@
 <ul>
   <li>
     <span class="logo">
-      <a href="http://www.3dcorp.us/"><img src="https://indieweb.org/sponsor-logos/full/3D-corporation.png"></a>
+      <a href="http://www.3dcorp.us/"><img src="https://indieweb.org/sponsor-logos/full/3D-corporation.png" style="width:140px;"></a>
     </span>
     <span class="description"><a href="http://www.3dcorp.us/">3D Corporation</a> makes IT simple, safe &amp; secure.</span>
   </li>
