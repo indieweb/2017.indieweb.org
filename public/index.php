@@ -215,8 +215,8 @@ map.addLayer(layer);
 var marker = L.marker([45.523459, -122.682703]).addTo(map);
 marker.bindPopup("<b>Mozilla Portland</b><br>1120 NW Couch St. #320<br>Portland, Oregon").openPopup();
 
-// var marker2 = L.marker([45.526159, -122.675330]).addTo(map);
-// marker2.bindPopup("<b>Pints</b><br>412 NW 5th Ave.<br>Portland, Oregon");
+var marker2 = L.marker([45.521450, -122.672375]).addTo(map);
+marker2.bindPopup("<b>Pine Street Market</b><br>126 SW 2nd St.<br>Portland, Oregon");
 
 $(function(){
   $(".popup").popup();
