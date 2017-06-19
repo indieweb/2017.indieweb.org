@@ -193,7 +193,7 @@ include(dirname(__FILE__).'/../lib/rsvps.php');
       <p><?= $title ?> &bull; <?= $date ?> &bull; <?= $city ?></p>
       <ul>
         <li><a href="https://indieweb.org/">IndieWebCamp Home Page</a></li>
-        <li><a href="https://indieweb.org/code-of-conduct">Code of Conduct</a></li>
+        <li><a href="https://indieweb.org/code-of-conduct">IndieWeb Code of Conduct</a></li>
         <li><a href="https://www.mozilla.org/en-US/about/governance/policies/participation/">Mozilla Community Participation Guidelines</a></li>
         <li><a href="https://indieweb.org/images/2/2d/indiewebcamp-sponsorship-prospectus.pdf">Sponsorship Prospectus</a> (PDF)</li>
       </ul>
