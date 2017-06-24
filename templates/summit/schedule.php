@@ -31,12 +31,10 @@
     <div class="details">
       <ul>
         <li><span class="time">09:00</span> Doors open, badges, coffee, and breakfast!</li>
-        <li><span class="time">09:30</span> <span class="featured">State of the IndieWeb</span></li>
-        <li><span class="time">10:00</span> <span class="featured">Cutting Edge IndieWeb</span></li>
-        <li><span class="time">10:30</span> Q&amp;A and break</li>
-        <li><span class="time">11:00</span> <span class="featured">How to: Building Blocks</span></li>
+        <li><span class="time">10:00</span> <span class="featured"><a href="https://indieweb.org/2017/Schedule#Saturday">Keynotes</a></span></li>
+        <li><span class="time">11:00</span> Lightning Intros &amp; Personal Site Demos</li>
         <li><span class="time">12:00</span> Group photo &amp; Lunch</li>
-        <li><span class="time">13:00</span> Intros, demos, scheduling</li>
+        <li><span class="time">13:30</span> Session Proposals &amp; Scheduling</li>
         <li><span class="time">14:00</span> Sessions (45min)</li>
         <li><span class="time">16:15</span> Last session</li>
         <li><span class="time">17:00</span> Day 1 closing session, break, meetup later for dinner</li>
