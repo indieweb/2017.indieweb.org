@@ -11,6 +11,10 @@ $events = [
   [
     'folder' => 'nyc',
     'url' => '/nyc'
+  ],
+  [
+    'folder' => 'austin',
+    'url' => '/austin'
   ]
 ];
 
