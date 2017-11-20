@@ -1,5 +1,5 @@
 <p>
-  <i class="calendar icon"></i> <time class="dt-start" datetime="2017-10-09">December 9</time>-<time class="dt-end" datetime="2017-10-10">10</time>, 2017<br>
+  <i class="calendar icon"></i> <time class="dt-start" datetime="2017-12-09">December 9</time>-<time class="dt-end" datetime="2017-12-10">10</time>, 2017<br>
   <i class="marker icon"></i> <span class="h-card p-location"><span class="p-name">Capital Factory</span>, <span class="p-street-address">701 Brazos Street</span>, <span class="p-locality">Austin</span>, <span class="p-region">Texas</span></span>
 </p>
 
