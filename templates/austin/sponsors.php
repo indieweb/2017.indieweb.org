@@ -3,7 +3,20 @@
 <ul>
   <li>
     <span class="logo">
-      <a href="https://www.dreamhost.com/r.cgi?426455"><img src="https://indieweb.org/sponsor-logos/full/dreamhost-logo.png" style="width:140px;"></a>
+      <a href="https://www.dreamhost.com/r.cgi?426455"><img src="https://indieweb.org/sponsor-logos/full/dreamhost-logo.png" style="width:200px;"></a>
+    </span>
+  </li>
+  <li>
+    <span class="logo">
+      <a href="http://polycotassociates.com/"><img src="https://indieweb.org/sponsor-logos/full/polycot-logo.png" style="width:140px;"></a>
+    </span>
+  </li>
+  <li>
+    <span class="logo">SuperBorrowNet</span>
+  </li>
+  <li>
+    <span class="logo">
+      <a href="https://micro.blog/"><img src="https://indieweb.org/sponsor-logos/full/microblog-logo.png" style="width:180px;"></a>
     </span>
   </li>
 </ul>
