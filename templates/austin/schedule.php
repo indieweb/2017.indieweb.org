@@ -21,7 +21,7 @@
         <li><span class="time">12:00</span> Group photo &amp; Lunch</li>
         <li><span class="time">13:00</span> 45-minute Sessions </li>
         <li><span class="time">16:45</span> Wrap up sessions, break, meetup later for dinner </li>
-        <li><span class="time">17:00</span> End of Day 1</li>
+        <li><span class="time">17:00</span> EFF Austin holiday party!</li>
       </ul>
     </div>    
   </div>
